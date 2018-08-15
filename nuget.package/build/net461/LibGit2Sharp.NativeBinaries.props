@@ -1,4 +1,4 @@
-<Project>
+﻿<Project>
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
     <libgit2_propsfile>$(MSBuildThisFileFullPath)</libgit2_propsfile>
@@ -28,6 +28,10 @@
     </ContentWithTargetPath>
     <ContentWithTargetPath Condition="Exists('$(MSBuildThisFileDirectory)\..\..\runtimes\linux-x64\native\libgit2-b0d9952.so')" Include="$(MSBuildThisFileDirectory)\..\..\runtimes\linux-x64\native\libgit2-b0d9952.so">
       <TargetPath>lib\linux-x64\libgit2-b0d9952.so</TargetPath>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Condition="Exists('$(MSBuildThisFileDirectory)\..\..\runtimes\ubuntu.18.04-x64\native\libgit2-b0d9952.so')" Include="$(MSBuildThisFileDirectory)\..\..\runtimes\ubuntu.18.04-x64\native\libgit2-b0d9952.so">
+      <TargetPath>lib\ubuntu.18.04-x64\libgit2-b0d9952.so</TargetPath>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </ContentWithTargetPath>
     <ContentWithTargetPath Condition="Exists('$(MSBuildThisFileDirectory)\..\..\runtimes\rhel-x64\native\libgit2-b0d9952.so')" Include="$(MSBuildThisFileDirectory)\..\..\runtimes\rhel-x64\native\libgit2-b0d9952.so">
